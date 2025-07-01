@@ -17,6 +17,10 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
 /* estilo do cabeçalho */
 
 .header{
@@ -51,7 +55,7 @@ header nav ul li{ /*chama os itens das listas ul*/
 }
 
 header .btn-contato button{/*mesma lógica, mexe no botão que tá dentro da div classe btn-contato dentro do header*/
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-size: 18px;
     font-weight: 700;
     background-color: rgb(238, 99, 145);
@@ -62,4 +66,37 @@ header .btn-contato button{/*mesma lógica, mexe no botão que tá dentro da div
 
 header .btn-contato button:hover{
     box-shadow: 0px 0px 8px rgb(238, 99, 145);
+    color: white;
+}
+
+main .btn-contato button{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(238, 99, 145);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+main .btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgb(238, 99, 145);
+    transform: scale(1.1);
+    transition: 0.2s;
+    color: white;
+}
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.topo-do-site h1{
+    color: #ffff;
+    font-size: 38px;
 }
